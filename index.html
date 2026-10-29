@@ -1,0 +1,46 @@
+<html> 
+ <head>
+ <title>Street Racer</title>
+ </head>
+<body>
+<div id="game">
+  <div id="hud">
+    <div class="logo">STREET RACER <span>3D</span></div>
+    <div class="stats">
+      <div>SPEED <strong><b id="speed">0</b> KM/H</strong></div>
+      <div>DISTANCE <strong><b id="distance">0</b> m</strong></div>
+      <div>SCORE <strong id="score">0</strong></div>
+    </div>
+  </div>
+
+  <div id="startScreen" class="overlay">
+    <div class="panel">
+      <div class="eyebrow">3D DRIVING EXPERIENCE</div>
+      <h1>STREET<br><span>RACER</span></h1>
+      <p>Drive fast. Dodge traffic. Own the road.</p>
+      <button id="startBtn">START RACE ↗</button>
+      <small>ARROW KEYS / WASD / TOUCH CONTROLS</small>
+    </div>
+  </div>
+
+  <div id="endScreen" class="overlay hidden">
+    <div class="panel">
+      <div class="eyebrow">RACE FINISHED</div>
+      <h1>GAME<br><span>OVER</span></h1>
+      <p>Your score: <b id="finalScore">0</b></p>
+      <button id="restartBtn">RACE AGAIN ↻</button>
+    </div>
+  </div>
+
+  <div id="warning" class="hidden"></div>
+
+  <div id="controls">
+    <button id="leftBtn" aria-label="Turn left">◀</button>
+    <button id="nitroBtn">⚡ NITRO</button>
+    <button id="rightBtn" aria-label="Turn right">▶</button>
+  </div>
+  <div id="tip">AVOID TRAFFIC • STAY ON ROAD</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</div>
+</body>
+</html>
